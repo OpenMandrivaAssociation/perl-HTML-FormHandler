@@ -1,5 +1,5 @@
 %define upstream_name    HTML-FormHandler
-%define upstream_version 0.32001
+%define upstream_version 0.32002
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -30,6 +30,7 @@ BuildRequires: perl(Test::More)
 BuildRequires: perl(Try::Tiny)
 BuildRequires: perl(aliased)
 BuildRequires: perl(namespace::autoclean)
+BuildRequires: perl(File::ShareDir::Install)
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
