@@ -1,9 +1,9 @@
 %define upstream_name    HTML-FormHandler
-%define upstream_version 0.33002
+%define upstream_version 0.34001
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:    An HTML form handler written in Moose
 License:    GPL+ or Artistic
