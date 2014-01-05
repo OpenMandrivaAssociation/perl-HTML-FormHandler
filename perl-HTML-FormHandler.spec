@@ -1,5 +1,5 @@
 %define upstream_name    HTML-FormHandler
-%define upstream_version 0.36003
+%define upstream_version 0.40053
 
 # Required but not provided with internal dep. generator
 %if %{_use_internal_dependency_generator}
@@ -14,7 +14,7 @@ Summary:	An HTML form handler written in Moose
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/HTML/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/HTML/HTML-FormHandler-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Carp)
@@ -100,3 +100,4 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Thu Jul 15 2010 cpan2dist 0.32001-1mdv
 - initial mdv release, generated with cpan2dist
+
