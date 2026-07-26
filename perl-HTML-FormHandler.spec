@@ -1,20 +1,18 @@
 %define upstream_name    HTML-FormHandler
-%define upstream_version 0.36003
-
 # Required but not provided with internal dep. generator
 %if %{_use_internal_dependency_generator}
 %define __noautoreq 'perl\\(HTML::FormHandler::Meta::Role\\)'
 %endif
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	0.36003
+Release:	4
 
 Summary:	An HTML form handler written in Moose
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/HTML/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/%{upstream_name}
+Source0:	http://www.cpan.org/modules/by-module/HTML/%{upstream_name}-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -59,7 +57,7 @@ update or create rows in a database. It can be used to process structured
 data that doesn't come from an HTML form.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
